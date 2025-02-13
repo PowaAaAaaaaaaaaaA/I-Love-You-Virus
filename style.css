@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #f2f0ef;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", serif;
+    height: 10vh;
+    align-items: end;
+
+    >h1{
+        font-size: 3rem;
+        letter-spacing: 5px;
+        margin-right: 80px;
+        font-weight: 900;
+    }
+    .me{
+        padding-left:20px ;
+        font-weight: 400;
+    }.ILY{
+        padding-right: 20px;
+        font-weight: 400;
+        color: red;
+    }
+}
+.page1{
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Outfit", serif;
+    height: 79vh;
+    
+>h1{
+    letter-spacing: 2px;
+}
+>p{
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: grey;
+
+}
+}
+
+.slider{
+    height:250px;
+    margin:auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.slider-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 50s linear infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide{
+    height: 500px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+} img{
+    width: 100%;
+    transition: transform 1s;
+}img:hover{
+    transform: translateZ(20px);    
+}
+
+
+.page-2{
+    height: 100vh;
+    text-align: center;
+
+    >h1{
+        font-family: "Outfit", serif;
+        letter-spacing: 5px;
+    }
+    >p{
+        font-family: "Outfit", serif;
+        color: grey;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+
+.container{
+height: 80vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 0.5px;
+
+.letters-containers{
+    text-align: justify;
+    border: 1px solid black;
+    width: 20%;
+    height: 20%;
+    font-family: "Patrick Hand", serif;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: transform 1s;
+}
+.letters-containers:hover{
+transform: scale(1.2);
+background-color: #EBE8E2;
+border: 3px solid #E7E0D3;
+}
+}
+}
+.page-3{
+    margin-top: 10rem;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    >p{
+        margin-top: 2rem;
+        font-family: "Outfit", serif;
+        color: grey;
+    }
+
+    }
+
+    a {
+        font-family: "Outfit", serif;
+        width: 30%;
+        position: relative;
+        padding: 30px 90px;
+        color: #000000;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 1.5em;
+        border: 2px solid transparent;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    
+    a:hover {
+        border: 2px solid #131212
+    }
+    
+    a::before {
+        content: '';
+        position: absolute;
+        inset: 0 8px;
+        border-left: 2px solid #0a0909;
+        border-right: 2px solid #000000;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    
+    a::after {
+        content: '';
+        position: absolute;
+        inset: 8px 0;
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }a.btn3:hover::before {
+        inset: 0px -12px;
+        transform: skewY(15deg);
+        -webkit-transform: skewY(15deg);
+        -moz-transform: skewY(15deg);
+        -ms-transform: skewY(15deg);
+        -o-transform: skewY(15deg);
+    }a.btn3:hover::after {
+        inset: -12px 0px;
+        transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -moz-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        -o-transform: skewX(15deg);
+    }
+
+footer{
+    height: 25vh;
+    background-color: #131212;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    
+    .cont{
+        >h1{
+            font-family: "Outfit", serif;
+            letter-spacing: 4px; 
+            color: #f2f0ef;
+        }>p{
+            padding: 5px;
+            color: #f2f0ef; 
+            font-family: "Patrick Hand", serif;
+        }
+    }
+    
+    .ikaw-container{
+        >p{
+            padding: 2px;
+            color: #f2f0ef;
+            font-family: "Outfit", serif;
+            font-size: 1rem;
+    
+        }
+    }
+    
+}
