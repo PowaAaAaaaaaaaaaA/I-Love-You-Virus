@@ -241,7 +241,7 @@ footer{
 }
 @media (max-width: 375px) {
 
-   
+    
     html{
         font-size: 12px;
     }
@@ -279,7 +279,7 @@ footer{
             width: 65%;
             gap: 0.5px;
             .letters-containers{
-                font-size: 0.8rem;
+                font-size: 0.85rem;
                 margin: auto;
                 width: 50%;    
             }
@@ -287,11 +287,12 @@ footer{
 
     }
     a {
+        
         margin-top: 100px;
         font-family: "Outfit", serif;
-        width: 30%;
+        width: 50%;
         position: relative;
-        padding: 30px 90px;
+        padding: 30px 20px;
         color: #000000;
         text-decoration: none;
         display: inline-block;
